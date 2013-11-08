@@ -26,7 +26,7 @@ How to use it
 
 You should already have a bunch of scripts and CSS required for bootstrap-daterangepicker:
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="daterangepicker-bs3.css">
 <script type="text/javascript" src="jquery.min.js"></script>
@@ -38,19 +38,19 @@ You should already have a bunch of scripts and CSS required for bootstrap-datera
 
 to the list above, you should add:
 
-```
+```html
 <script type="text/javascript" src="ng-bs-daterangepicker.js"></script>
 ```
 
 Then, inject `ngBootstrap` in your application module:
 
-```
+```javascript
 angular.module('myApp', ['ngBootstrap']);
 ```
 
 and then just add an `input` of type `daterange`:
 
-```
+```html
 <input type="daterange" ng-model="myDateRange">
 ```
 
@@ -67,7 +67,7 @@ The result object `$scope.myDateRange` has a `startDate` and `endDate` propertie
 
 Example with all above features:
 
-```
+```html
 <input
 	type="daterange"
 	ng-model="dates"
